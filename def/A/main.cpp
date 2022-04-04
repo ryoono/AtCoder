@@ -9,6 +9,7 @@ using namespace std;
 
 typedef long long ll;
 typedef unsigned int ui;
+typedef int si;
 
 int main( void ){
 
