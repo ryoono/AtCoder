@@ -23,7 +23,7 @@ int main( void ){
     }
 
     sort( a.begin(), a.end());
-    sort( a.begin(), a.end());
+    // sort( a.begin(), a.end());
     a.erase(unique(a.begin(), a.end()), a.end());
     n = a.size();
     // cout << "n:" << n << endl;
