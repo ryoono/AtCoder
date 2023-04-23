@@ -23,14 +23,17 @@ int main( void ){
     si ans = 0;
     si renzoku = 0;
     for( si i=0; i<n; ++i ){
+        // 連続したoを記録する
         if( s[i] == 'o' ){
             ++renzoku;
         }
         else{
+            // ooo-のパターンを確認する
             ans = max(ans, renzoku);
             renzoku = 0;
         }
     }
+    // -oooのパターンを確認する
     ans = max(ans, renzoku);
 
     if( ans == n || ans == 0){
