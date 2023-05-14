@@ -55,8 +55,8 @@ int main( void ){
         return 0;
     }
 
-    ll sum = 0;
-    ll idx = 1;
+    sum = 0;
+    idx = 1;
 
     //for( ll i=s.size()-1; i>=s.size()-keta; --i ){
     for( ll i=f; i>=e; --i ){

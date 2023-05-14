@@ -54,16 +54,16 @@ int main( void ){
         }
     }
 
-    for( si i=0; i<26; ++i ){
-        cout << t_num[i];
-    }
-    cout << " " << t_at;
-    cout << endl;
-    for( si i=0; i<26; ++i ){
-        cout << s_num[i];
-    }
-    cout << " " << s_at;
-    cout << endl;
+    // for( si i=0; i<26; ++i ){
+    //     cout << t_num[i];
+    // }
+    // cout << " " << t_at;
+    // cout << endl;
+    // for( si i=0; i<26; ++i ){
+    //     cout << s_num[i];
+    // }
+    // cout << " " << s_at;
+    // cout << endl;
 
     for( si i=0; i<26; ++i ){
         if( t_num[i] != s_num[i] ){

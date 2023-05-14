@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+//#include <vector>
 // #include <algorithm>
 // #include <set>
 // #include <map>
@@ -15,17 +15,18 @@ typedef int si;
 
 int main( void ){
 
-    si n;
-    si a[n];
+    si n = 0;
     si ans[100*101];
     si ans_idx = 0;
 
     cin >> n;
+    si a[n];
     for( si i=0; i<n; ++i ){
         cin >> a[i];
     }
 
     ans[ans_idx++] = a[0];
+
     for( si i=1; i<n; ++i ){
         if( (a[i-1]-1 != a[i]) && (a[i-1]+1 != a[i]) ){
             if( a[i-1] > a[i] ){
@@ -45,5 +46,6 @@ int main( void ){
     for( si i=0; i<ans_idx; ++i ){
         cout << ans[i] << " ";
     }
+    
     return 0;
 }
