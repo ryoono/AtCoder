@@ -36,9 +36,11 @@ int main( void ){
         auto Iter_under = lower_bound(b.begin(), b.end(), under);
         auto Iter_upper = upper_bound(b.begin(), b.end(), upper);
 
-        if( 0 <= (Iter_upper - b.begin()) && (Iter_under - b.begin()) < n ){
-            ans = max( ans, a[i]+(*Iter_under));
+        if( 0 <= (Iter_upper - b.begin()) ){
             ans = max( ans, a[i]+(*Iter_upper));
+        }
+        if((Iter_under - b.begin()) < n ){
+            ans = max( ans, a[i]+(*Iter_under));
         }
     }
 
