@@ -23,6 +23,7 @@ int main( void ){
         cin >> s[i];
     }
 
+    // クッキー四角の左上座標と右下座標の特定
     bool sFlag = false;
     si sh=0, sw=0, eh=0, ew=0;
     for( si i=0; i<h; ++i ){
@@ -43,21 +44,17 @@ int main( void ){
         }
     }
 
-    // cout << sh << " " << sw << endl;
-    // cout << eh << " " << ew << endl;
-
-
+    // #じゃない箇所の特定
     for( si i=sh; i<=eh; ++i ){
         for( si j=sw; j<=ew; ++j ){
-            // cout << "2" << endl;
             if( s[i][j] != '#' ){
                 cout << i+1 << " " << j+1;
                 return 0;
             }
-            // cout << "2" << endl;
         }
     }
 
+    // イレギュラーパターン(右上または左下を食われた場合)
     if( sw != 0 ){
         if( s[sh+1][sw-1] == '#' ){
             cout << sh+1 << " " << sw;
@@ -65,11 +62,5 @@ int main( void ){
         }
     }
     cout << eh+1 << " " << ew+2;
-    // if( ew != w-2 ){
-    //     if( s[eh-1][ew+1] == '#' ){
-    //         cout << eh+1 << " " << sw+3;
-    //         return 0;
-    //     }
-    // }
     return 0;
 }
