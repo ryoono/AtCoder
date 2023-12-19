@@ -6,12 +6,14 @@
 // #include <cstring>
 // #include <queue>
 // #include <stack>
+// #include <cmath>
 
 using namespace std;
 
 typedef long long ll;
 typedef unsigned int ui;
 typedef int si;
+typedef string str;
 
 int main( void ){
 
