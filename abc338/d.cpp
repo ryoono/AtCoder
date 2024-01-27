@@ -19,6 +19,13 @@ typedef string str;
 
 int main( void ){
 
+    si n, m;
+    cin >> n >> m;
+    si x[m];
+    for( si i=0; i<m; ++i ){
+        cin >> x[i];
+    }
 
+    
     return 0;
 }
